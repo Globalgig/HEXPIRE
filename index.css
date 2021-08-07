@@ -1,0 +1,33 @@
+
+.hexSpace{
+    height: 400px;
+    width: 400px;
+    left:50%;
+    top:50%;
+    margin-left:-200px;
+    margin-top:-200px;
+    position: absolute;
+}
+
+.hexSegment{
+    height:20px;
+    width:200px;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+}
+
+.rTriangle{
+    height:0px;
+    width:0px;
+    right:-11.6px;
+    border-bottom:20px solid transparent;
+    position:absolute;
+}
+
+.lTriangle{
+    height:0px;
+    width:0px;
+    left:-11.6px;
+    border-bottom:20px solid transparent;
+    position:absolute;
+}
