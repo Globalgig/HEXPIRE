@@ -5,6 +5,11 @@ function increment(){
 	document.getElementById("theButton").value = value;
 }
 
+window.onload = function() {
+	sound = document.getElementById("loadingSound");
+	sound.play();
+}
+
 /*
 function timer(){
 	while (true){

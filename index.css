@@ -1,3 +1,11 @@
+body{
+    font-family: Helvetica, Sans-Serif;
+    font-weight:650;
+}
+
+p{
+    margin: 0px;
+}
 
 .hexSpace{
     height: 400px;
@@ -30,4 +38,12 @@
     left:-11.6px;
     border-bottom:20px solid transparent;
     position:absolute;
+}
+
+.number{
+    height:20px;
+    width:200px;
+    position: absolute;
+    top: 25px;
+    text-align: center;
 }

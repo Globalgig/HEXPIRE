@@ -1,42 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <script src="index.js"></script>
+<script src="data.json"></script>
 
 <head>
     <link rel="stylesheet" href="index.css">
 </head>
 
+
 <body>
+
+	<audio id="loadingSound">
+		 <source src="peter_and_the_wolf.mp3" type="audio/mpeg">
+	</audio>
+
+
 	<div class="hexSpace">
-		<div class="hexSegment" style="background-color: #F04248; left: 100px">
+		<div class="hexSegment" style="background-color: #F04248; left: 100px;">
 			<div class="rTriangle" style="border-left: 11.6px solid #F04248;"></div>
 			<div class="lTriangle" style="border-right: 11.6px solid #F04248;"></div>
+			<div class ="number" style="text-align: center;">
+				<p style="color: #F04248; text-align: center" value="16">16</p>
+			</div>
 		</div>
 
 		<div class="hexSegment" style="background-color: #FBB637; transform: rotate(60deg); right: -64px; top:95px">
 			<div class="rTriangle" style="border-left: 11.6px solid #FBB637;"></div>
 			<div class="lTriangle" style="border-right: 11.6px solid #FBB637;"></div>
+			<div class ="number" style="text-align: center; transform: rotate(300deg)">
+				<p style="color: #FBB637; text-align: center" value="17">17</p>
+			</div>
 		</div>
 
 		<div class="hexSegment" style="background-color: #4190C8; transform: rotate(120deg); right: -64px; bottom:95px">
 			<div class="rTriangle" style="border-left: 11.6px solid #4190C8;"></div>
 			<div class="lTriangle" style="border-right: 11.6px solid #4190C8;"></div>
+			<div class ="number" style="text-align: center; transform: rotate(240deg)">
+				<p style="color: #4190C8; text-align: center" value="17">17</p>
+			</div>
 		</div>
 
 		<div class="hexSegment" style="background-color: #976C9D; transform: rotate(180deg); left: 100px; bottom:0px">
 			<div class="rTriangle" style="border-left: 11.6px solid #976C9D;"></div>
 			<div class="lTriangle" style="border-right: 11.6px solid #976C9D;"></div>
+			<div class ="number" style="text-align: center; transform: rotate(180deg)">
+				<p style="color: #976C9D; text-align: center" value="16">16</p>
+			</div>
 		</div>
 
 		<div class="hexSegment" style="background-color: #6FB668; transform: rotate(240deg); left: -64px; bottom:95px">
 			<div class="rTriangle" style="border-left: 11.6px solid #6FB668;"></div>
 			<div class="lTriangle" style="border-right: 11.6px solid #6FB668;"></div>
+			<div class ="number" style="text-align: center; transform: rotate(120deg)">
+				<p style="color: #6FB668; text-align: center" value="17">17</p>
+			</div>
 		</div>
 
 		<div class="hexSegment" style="background-color: #F7EE50; transform: rotate(300deg); left: -64px; top:95px">
 			<div class="rTriangle" style="border-left: 11.6px solid #F7EE50;"></div>
 			<div class="lTriangle" style="border-right: 11.6px solid #F7EE50;"></div>
+			<div class ="number" style="text-align: center; transform: rotate(60deg)">
+				<p style="color: #F7EE50; text-align: center" value="17">17</p>
+			</div>
 		</div>
+
+
 	</div>
 		
 	
