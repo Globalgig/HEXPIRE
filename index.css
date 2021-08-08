@@ -1,10 +1,47 @@
 body{
     font-family: Helvetica, Sans-Serif;
     font-weight:650;
+    background-color: #3C3744;
 }
 
 p{
     margin: 0px;
+}
+
+
+@-webkit-keyframes redFade {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@-webkit-keyframes orangeFade {
+    0% { opacity: 0; }
+    27% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@-webkit-keyframes blueFade {
+    0% { opacity: 0; }
+    45% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@-webkit-keyframes purpleFade {
+    0% { opacity: 0; }
+    51% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@-webkit-keyframes greenFade {
+    0% { opacity: 0; }
+    62% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@-webkit-keyframes yellowFade {
+    0% { opacity: 0; }
+    76% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
 .hexSpace{
@@ -21,6 +58,7 @@ p{
     height:20px;
     width:200px;
     position: absolute;
+    opacity: 0;
     -webkit-backface-visibility: hidden;
 }
 
