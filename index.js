@@ -6,9 +6,16 @@ function increment(){
 }
 
 window.onload = function() {
-	sound = document.getElementById("loadingSound");
-	sound.play();
+	alert("Okay!");
+	document.getElementById("loadingSound").play();
 }
+
+
+window.addEventListener("click", function(event) {
+    document.getElementById("loadingSound").play();
+});
+
+
 
 /*
 function timer(){
