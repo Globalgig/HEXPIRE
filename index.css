@@ -22,25 +22,25 @@ p{
 
 @-webkit-keyframes blueFade {
     0% { opacity: 0; }
-    45% { opacity: 0; }
+    44% { opacity: 0; }
     100% { opacity: 1; }
 }
 
 @-webkit-keyframes purpleFade {
     0% { opacity: 0; }
-    51% { opacity: 0; }
+    48% { opacity: 0; }
     100% { opacity: 1; }
 }
 
 @-webkit-keyframes greenFade {
     0% { opacity: 0; }
-    62% { opacity: 0; }
+    58% { opacity: 0; }
     100% { opacity: 1; }
 }
 
 @-webkit-keyframes yellowFade {
     0% { opacity: 0; }
-    76% { opacity: 0; }
+    74% { opacity: 0; }
     100% { opacity: 1; }
 }
 
