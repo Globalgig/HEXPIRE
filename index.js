@@ -1,6 +1,6 @@
-// $.getJSON("./data.json", function(json) {
-//     console.log(json);
-// })
+ $.getJSON("https://github.com/Globalgig/HEXPIRE/blob/main/data.json", function(json) {
+     console.log(json);
+ })
 
 
 function startup(){
