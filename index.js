@@ -1,4 +1,4 @@
- $.getJSON("https://raw.github.com/Globalgig/HEXPIRE/blob/main/data.json", function(json) {
+ $.getJSON("/data.json", function(json) {
      console.log(json);
  })
 
