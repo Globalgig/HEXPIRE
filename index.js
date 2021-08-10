@@ -1,3 +1,8 @@
+$.getJSON("./data.json", function(json) {
+    console.log(json);
+})
+
+
 function startup(){
 	document.getElementById("loadingSound").play();
 	addFade("red", "redFade")
@@ -6,6 +11,7 @@ function startup(){
 	addFade("purple", "purpleFade")
 	addFade("green", "greenFade")
 	addFade("yellow", "yellowFade")
+	secondaryFade("messageBoard")
 	window.removeEventListener("click", startup);
 }
 
@@ -14,6 +20,13 @@ function addFade(id, fadeclass){
 	obj.style.webkitAnimationName = fadeclass;
 	obj.style.webkitAnimationDuration = "2.3s";
 	obj.style.opacity = 1;	
+}
+
+function secondaryFade(id){
+	obj = document.getElementById(id);
+	obj.style.webkitAnimationName = "lateFade";
+	obj.style.webkitAnimationDuration = "4.6s";
+	obj.style.opacity = 1;
 }
 
 window.addEventListener("click", startup);

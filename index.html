@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<script src="index.js"></script>
-<script src="data.json"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="index.js"></script>
 
 <head>
     <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-
+	<!-- Startup noise -->
 	<audio id="loadingSound" preload="auto">
 		 <source src="peter_and_the_wolf.mp3" type="audio/mpeg">
 	</audio>
 
+	<!-- Message Board (event log) on the right side -->
+	<div class="messageBoard" id="messageBoard">
+		<p>Words</p><p>Words</p><p>Words</p><p>Words</p><p>Words</p><p>Words</p><p>Words</p><p>Words</p><p>Words</p><p>Words</p><p>Words</p><p>Words</p><p>Words</p><p>Words</p><p>Words</p><p>Words</p><p>Words</p><p>Words</p><p>Words</p><p>Words</p><p>Words</p><p>Words</p><p>Words</p><p>Words</p><p>Words</p><p>Words</p><p>Words</p><p>Words</p><p>Words</p><p>Words</p><p>Words</p><p>Words</p><p>Words</p><p>Words</p><p>Words</p><p>Words</p><p>Words</p><p>Words</p><p>Words</p><p>Words</p><p>Words</p><p>Words</p><p>Words</p><p>Words</p><p>Words</p><p>Words</p><p>Words</p><p>Words</p><p>Words</p><p>Words</p><p>Words</p><p>Words</p><p>Words</p><p>Words</p><p>Words</p>
+	</div>
 
+	<!-- Central hexagon feature -->
 	<div class="hexSpace">
 		<div class="hexSegment" id="red" style="background-color: #F04248; left: 100px;">
 			<div class="rTriangle" style="border-left: 11.6px solid #F04248;"></div>

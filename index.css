@@ -1,6 +1,7 @@
 body{
     font-family: Helvetica, Sans-Serif;
     font-weight:650;
+    color: white;
     background-color: #3C3744;
 }
 
@@ -44,6 +45,12 @@ p{
     100% { opacity: 1; }
 }
 
+@-webkit-keyframes lateFade {
+    0% { opacity: 0; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
 .hexSpace{
     height: 400px;
     width: 400px;
@@ -84,4 +91,22 @@ p{
     position: absolute;
     top: 25px;
     text-align: center;
+}
+
+.messageBoard{
+    right:3%;
+    top:10%;
+    height:80%;
+    width:300px;
+    position: absolute;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 5px;
+    opacity: 0;
+    border-radius: 10px;
+    overflow-y: scroll;
+}
+
+.messageBoard::-webkit-scrollbar{
+    display: none;
 }
