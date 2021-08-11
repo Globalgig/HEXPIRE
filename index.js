@@ -1,6 +1,8 @@
- $.getJSON("./data.json", function(json) {
-     console.log(json);
+ $.getJSON("./data.json", function(data) {
+     console.log(data);
  })
+
+ console.log("Hello!");
 
 
 function startup(){
