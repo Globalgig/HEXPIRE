@@ -1,3 +1,27 @@
 {
-	"name" : "Niroj"
+	"cards": {
+		"card1" : {
+			"prompt" : "Military",
+			"color" : "red",
+			"decisions" : {
+				"l" : "blue",
+				"m" : "red",
+				"r" : "red"
+			},
+			"effects" : {
+				"l" : {
+					"text" : "Gain 2 Blue, Lose 2 Red",
+					"modifiers" : "+2B,-2R"
+				},
+				"m" : {
+					"text" : "Gain 1 Red, Lose 1 Blue",
+					"modifiers" : "+1R,-1B"
+				},
+				"r" : {
+					"text" : "Gain 2 Red, Lose 2 Blue",
+					"modifiers" : "+2R,-2B"
+				}
+			}
+		}
+	}
 }

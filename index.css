@@ -110,3 +110,49 @@ p{
 .messageBoard::-webkit-scrollbar{
     display: none;
 }
+
+.decisionBoard{
+    left: 3%;
+    top:10%;
+    height:80%;
+    width:300px;
+    position: absolute;
+}
+
+.prompt{
+    height: 23%;
+    top: 0px;
+    position: absolute;
+    width: 286px;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.decisionSpace{
+    height: 10%;
+    width: 100%;
+    top: 30%;
+    position: absolute;
+}
+
+.decisionButton{
+    height: 86px;
+    width: 86px;
+    background-color: transparent;
+    border: 2px solid white;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.effectText{
+    bottom: 0%;
+    height: 45%;
+    width: 286px;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    position: absolute;
+}

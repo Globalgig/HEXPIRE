@@ -1,10 +1,14 @@
- // $.getJSON("./data.json", function(data) {
- //     console.log(data);
- // })
+const red = "#F04248";
+const orange = "#FBB637";
+const blue = "#4190C8";
+const purple = "#A078A5";
+const green = "#6FB668";
+const yellow = "#F9FF47";
+const gray = "#797D81";
 
 $(document).ready(function() {
 	$.getJSON("https://globalgig.github.io/HEXPIRE/data.json", function(data) {
-		console.log(data);
+		const jsonObj = data;
  	});
 });
 
@@ -35,22 +39,20 @@ function secondaryFade(id){
 	obj.style.opacity = 1;
 }
 
+function removeCard(cardID){
+
+}
+
+function addCard(cardID){
+
+}
+
+function selectCard(cardID){
+
+}
+
+function displayCard(){
+
+}
+
 window.addEventListener("click", startup);
-
-function increment(){
-	value = document.getElementById("theButton").value;
-	value++;
-	document.getElementById("theButton").innerHTML = value;
-	document.getElementById("theButton").value = value;
-}
-
-
-
-/*
-function timer(){
-	while (true){
-		console.log("Okay")
-		setTimeout(test, 1000)
-	}
-}
-*/
