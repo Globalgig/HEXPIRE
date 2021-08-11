@@ -2,9 +2,18 @@
  //     console.log(data);
  // })
 
- $.getJSON("https://globalgig.github.io/HEXPIRE/data.json", function(data) {
-     console.log(data);
- })
+$(document).ready(function() {
+	console.log("what")
+	$.getJSON("https://globalgig.github.io/HEXPIRE/data.json", function(data) {
+		alert("Being called");
+		console.log(JSON.stringify(data));
+     	console.log("Help");
+ 	})
+ 	.fail(function (jqxhr, status, error) { 
+		console.log('error', status, error) }
+	);
+});
+
 
 
  console.log("Hello!");
@@ -20,6 +29,11 @@ function startup(){
 	addFade("yellow", "yellowFade")
 	secondaryFade("messageBoard")
 	window.removeEventListener("click", startup);
+
+	$.getJSON("https://globalgig.github.io/HEXPIRE/data.json", function(data) {
+     console.log(JSON.stringify(data));
+     console.log("Help");
+ 	});
 }
 
 function addFade(id, fadeclass){
