@@ -1,6 +1,11 @@
- $.getJSON("./data.json", function(data) {
+ // $.getJSON("./data.json", function(data) {
+ //     console.log(data);
+ // })
+
+ $.getJSON("https://globalgig.github.io/HEXPIRE/data.json", function(data) {
      console.log(data);
  })
+
 
  console.log("Hello!");
 
