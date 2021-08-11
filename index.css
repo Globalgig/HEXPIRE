@@ -117,6 +117,7 @@ p{
     height:80%;
     width:300px;
     position: absolute;
+    opacity: 0;
 }
 
 .prompt{
@@ -130,7 +131,7 @@ p{
     border-radius: 10px;
 }
 
-.decisionSpace{
+.buttonSpace{
     height: 10%;
     width: 100%;
     top: 30%;
