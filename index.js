@@ -1,4 +1,4 @@
- $.getJSON("./data.json", function(json) {
+ $.getJSON("./HEXPIRE/data.json", function(json) {
      console.log(json);
  })
 
