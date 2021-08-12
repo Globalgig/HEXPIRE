@@ -183,15 +183,21 @@ class Game{
 	}
 
 	buttonClick(button){
-		console.log(this.currentCard.effects[button].modifiers)
-		let splitModifiers = this.currentCard.effects[button].modifiers.split(',');
+		let messageString = this.currentCard.effects[button].modifiers;
+		var tag = document.createElement("p");
+		var text = document.createTextNode(messageString);
+		tag.appendChild(text);
+		document.getElementById("messageBoard").appendChild(tag);
+
+		//Parse out strings and change modifiers
+		let splitModifiers = messageString.split(',');
 		splitModifiers.forEach(function(element){
 			//Parse out the sign of the string
 			if(element[0] == "+"){
 				this[element[2] + 'Val'] += parseInt(element[1]);
 			}
 			else if (element[0] == "-"){
-				this[element[2] + 'Val'] += parseInt(element[1]);
+				this[element[2] + 'Val'] -= parseInt(element[1]);
 			}
 		}, this);
 
