@@ -1,25 +1,140 @@
 {
 	"cards": {
-		"card1" : {
+		"1" : {
 			"prompt" : "Military",
 			"color" : "red",
 			"decisions" : {
 				"l" : "blue",
-				"m" : "red",
-				"r" : "red"
+				"m" : "purple",
+				"r" : "purple"
 			},
 			"effects" : {
 				"l" : {
-					"text" : "Gain 2 Blue, Lose 2 Red",
-					"modifiers" : "+2B,-2R"
+					"text" : "Gain 2 Blue, Lose 2 Purple",
+					"modifiers" : "+2b,-2p"
 				},
 				"m" : {
-					"text" : "Gain 1 Red, Lose 1 Blue",
-					"modifiers" : "+1R,-1B"
+					"text" : "Gain 1 Red, Lose 1 Purple",
+					"modifiers" : "+1r,-1p"
 				},
 				"r" : {
-					"text" : "Gain 2 Red, Lose 2 Blue",
-					"modifiers" : "+2R,-2B"
+					"text" : "Gain 2 Red, Lose 2 Purple",
+					"modifiers" : "+2r,-2p"
+				}
+			}
+		},
+		"2" : {
+			"prompt" : "Industrial",
+			"color" : "orange",
+			"decisions" : {
+				"l" : "green",
+				"m" : "orange",
+				"r" : "orange"
+			},
+			"effects" : {
+				"l" : {
+					"text" : "Gain 2 Green, Lose 2 Orange",
+					"modifiers" : "+2g,-2o"
+				},
+				"m" : {
+					"text" : "Gain 1 Orange, Lose 1 Green",
+					"modifiers" : "+1o,-1g"
+				},
+				"r" : {
+					"text" : "Gain 2 Orange, Lose 2 Green",
+					"modifiers" : "+2o,-2g"
+				}
+			}
+		},
+		"3" : {
+			"prompt" : "Scientific",
+			"color" : "blue",
+			"decisions" : {
+				"l" : "yellow",
+				"m" : "blue",
+				"r" : "blue"
+			},
+			"effects" : {
+				"l" : {
+					"text" : "Gain 2 Yellow, Lose 2 Blue",
+					"modifiers" : "+2y,-2b"
+				},
+				"m" : {
+					"text" : "Gain 1 Yellow, Lose 1 Blue",
+					"modifiers" : "+1y,-1b"
+				},
+				"r" : {
+					"text" : "Gain 2 Yellow, Lose 2 Blue",
+					"modifiers" : "+2y,-2b"
+				}
+			}
+		},
+		"4" : {
+			"prompt" : "Diplomatic",
+			"color" : "purple",
+			"decisions" : {
+				"l" : "red",
+				"m" : "purple",
+				"r" : "purple"
+			},
+			"effects" : {
+				"l" : {
+					"text" : "Gain 2 Red, Lose 2 Purple",
+					"modifiers" : "+2r,-2p"
+				},
+				"m" : {
+					"text" : "Gain 1 Purple, Lose 1 Red",
+					"modifiers" : "+1p,-1r"
+				},
+				"r" : {
+					"text" : "Gain 2 Purple, Lose 2 Red",
+					"modifiers" : "+2p,-2r"
+				}
+			}
+		},
+		"5" : {
+			"prompt" : "Enviromental",
+			"color" : "green",
+			"decisions" : {
+				"l" : "orange",
+				"m" : "green",
+				"r" : "green"
+			},
+			"effects" : {
+				"l" : {
+					"text" : "Gain 2 Orange, Lose 2 Green",
+					"modifiers" : "+2o,-2g"
+				},
+				"m" : {
+					"text" : "Gain 1 Green, Lose 1 Orange",
+					"modifiers" : "+1g,-1o"
+				},
+				"r" : {
+					"text" : "Gain 2 Green, Lose 2 Orange",
+					"modifiers" : "+2g,-2o"
+				}
+			}
+		},
+		"6" : {
+			"prompt" : "Economic",
+			"color" : "yellow",
+			"decisions" : {
+				"l" : "blue",
+				"m" : "yellow",
+				"r" : "yellow"
+			},
+			"effects" : {
+				"l" : {
+					"text" : "Gain 2 Blue, Lose 2 Yellow",
+					"modifiers" : "+2b,-2y"
+				},
+				"m" : {
+					"text" : "Gain 1 Yellow, Lose 1 Blue",
+					"modifiers" : "+1y,-1b"
+				},
+				"r" : {
+					"text" : "Gain 2 Yellow, Lose 2 Blue",
+					"modifiers" : "+2y,-2b"
 				}
 			}
 		}
