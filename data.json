@@ -11,7 +11,8 @@
 			},
 			"effects" : {
 				"l" : {
-					"text" : "Gain 2 purple, Lose 2 red",
+					"text" : "Rig the Election
+Gain 2 purple, Lose 2 red",
 					"modifiers" : "2+p,2-r",
 				},
 				"m" : {
