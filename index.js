@@ -77,7 +77,7 @@ class Game{
 		//Value of cards
 		this.currentCard = 0;
 		this.cardID = 0;
-		this.currentDeck = ['1','2','3','4','5','6'];
+		this.currentDeck = ['01','02','03','04','05','06'];
 
 		//Timing
 		this.turnTimer = 30;
@@ -115,6 +115,7 @@ class Game{
 	cardRoutine(){
 		this.cardID = this.selectCard();
 		this.currentCard = this.jsonObj.cards[this.cardID];
+		console.log(this.currentCard)
 		this.displayCard(this.currentCard);
 	}
 
@@ -192,7 +193,11 @@ class Game{
 	}
 
 	buttonHover(event){
-		document.getElementById("effectText").innerHTML = "<p>" + game.currentCard.effects[event.currentTarget.id].text + "</p>";
+		let effectText = document.getElementById("effectText");
+		effectText.innerHTML = "";
+		game.currentCard.effects[event.currentTarget.id].text.forEach(function(element){
+				effectText.innerHTML += "<p>" + element + "</p>";
+		});
 	}
 
 	buttonClick(event){
@@ -212,6 +217,9 @@ class Game{
 			else if (element[1] == "-"){
 				this[element[2] + 'Val'] -= parseInt(element[0]);
 			}
+			else if(element[1] == "A"){
+				this.currentDeck.append(str(element[1]) + str(element[2]))
+			}
 		}, game);
 
 		//Reset timers
@@ -226,8 +234,10 @@ class Game{
 $(document).ready(function() {
 	window.addEventListener("click", startup);
 	game = new Game();
+	console.log("yes")
 
 	$.getJSON("https://globalgig.github.io/HEXPIRE/data.json", function(data) {
+		console.log("okay?")
 		game.jsonObj = data;
 		game.cardRoutine();
 		document.getElementById("l").addEventListener("mouseenter",game.buttonHover);
