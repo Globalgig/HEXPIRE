@@ -14,25 +14,23 @@
 		 <source src="peter_and_the_wolf.mp3" type="audio/mpeg">
 	</audio>
 
-	<p id="timer">X</p>
-	<p id="longTimer" style = "right: 0px; position: absolute">X</p>
+	<p id="longTimer" style = "right: 10px; position: absolute">X</p>
 
 	<!-- Message Board (event log) on the right side -->
 	<div class="messageBoard" id="messageBoard"></div>
 
 	<!-- Decision Board (player interaction) on the left side -->
 	<div class="decisionBoard" id="decisionBoard">
-		<div class="prompt" id="prompt">
-			<p>Test</p>
+		<div style="position: absolute; top: -20px; width: 100%; text-align: center">
+			<p id="timer"></p>
 		</div>
+		<div class="prompt" id="prompt"></div>
 		<div class="buttonSpace" id="buttonSpace">
-			<button class="decisionButton" id="decisionButtonl" style="left: 0px;"></button>
-			<button class="decisionButton" id="decisionButtonm" style="left:105px;"></button>
-			<button class="decisionButton" id="decisionButtonr" style="right: 0px"></button>
+			<button class="decisionButton" id="l" style="left: 0px;"></button>
+			<button class="decisionButton" id="m" style="left:105px;"></button>
+			<button class="decisionButton" id="r" style="right: 0px"></button>
 		</div>
-		<div class="effectText" id="effectText">
-			<p>Double test</p>
-		</div>
+		<div class="effectText" id="effectText"></div>
 	</div>
 
 	<!-- Central hexagon feature -->

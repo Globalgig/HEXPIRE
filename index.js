@@ -6,6 +6,8 @@ const green_ = "#6FB668";
 const yellow_ = "#F9FF47";
 const gray_ = "#797D81";
 
+var game;
+
 function toHEX(color){
 	if (color == "red"){
 		return red_;
@@ -40,6 +42,7 @@ function startup(){
 	addFade("yellow", "yellowFade")
 	secondaryFade("messageBoard")
 	secondaryFade("decisionBoard")
+	game.timing();
 	window.removeEventListener("click", startup);
 }
 
@@ -70,7 +73,10 @@ class Game{
 		this.pVal = 10;
 		this.gVal = 10;
 		this.yVal = 10;
+
+		//Value of cards
 		this.currentCard = 0;
+		this.cardID = 0;
 		this.currentDeck = ['1','2','3','4','5','6'];
 
 		//Timing
@@ -105,9 +111,10 @@ class Game{
 		}.bind(this), 1000);
 	}
 
+
 	cardRoutine(){
-		let cardID = this.selectCard();
-		this.currentCard = this.jsonObj.cards[cardID];
+		this.cardID = this.selectCard();
+		this.currentCard = this.jsonObj.cards[this.cardID];
 		this.displayCard(this.currentCard);
 	}
 
@@ -136,13 +143,13 @@ class Game{
 		//Set the prompt
 		let promptObj = document.getElementById("prompt");
 		let promptColor = this.currentCard.color;
-		let promptText = this.currentCard.prompt;
-		promptObj.innerHTML = "<p style='color:" + toHEX(promptColor) + "'>" + promptText + "</p>";
+		promptObj.innerHTML = "<p> <span style='color:" + toHEX(promptColor) + "'>" + this.currentCard.type + "</span>" + "   " + "ID: " + this.cardID + "</p>";
+		promptObj.innerHTML += "<p>" + this.currentCard.prompt + "</p>";
 
 		//Set the buttons
-		document.getElementById("decisionButtonl").style.backgroundColor = toHEX(this.currentCard.decisions.l);
-		document.getElementById("decisionButtonm").style.backgroundColor = toHEX(this.currentCard.decisions.m);
-		document.getElementById("decisionButtonr").style.backgroundColor = toHEX(this.currentCard.decisions.r);
+		document.getElementById("l").style.backgroundColor = toHEX(this.currentCard.decisions.l);
+		document.getElementById("m").style.backgroundColor = toHEX(this.currentCard.decisions.m);
+		document.getElementById("r").style.backgroundColor = toHEX(this.currentCard.decisions.r);
 	}
 
 	update(){
@@ -162,6 +169,13 @@ class Game{
 		if (this.rVal == 0 || this.oVal == 0 || this.bVal == 0 || this.pVal == 0 || this.gVal == 0 || this.yVal == 0){
 			//gameEnd
 			clearInterval(this.clock);
+			document.getElementById("l").removeEventListener("mouseenter",game.buttonHover);
+			document.getElementById("m").removeEventListener("mouseenter",game.buttonHover);
+			document.getElementById("r").removeEventListener("mouseenter",game.buttonHover);
+			document.getElementById("l").removeEventListener("click",game.buttonClick);
+			document.getElementById("m").removeEventListener("click",game.buttonClick);
+			document.getElementById("r").removeEventListener("click",game.buttonClick);
+			//console.log("points")
 			return;
 		}
 		else {
@@ -177,13 +191,12 @@ class Game{
 		document.getElementById(value).innerHTML = this[value];
 	}
 
-	buttonHover(button){
-		console.log(this.currentCard);
-		document.getElementById("effectText").innerHTML = "<p>" + this.currentCard.effects[button].text + "</p>";
+	buttonHover(event){
+		document.getElementById("effectText").innerHTML = "<p>" + game.currentCard.effects[event.currentTarget.id].text + "</p>";
 	}
 
-	buttonClick(button){
-		let messageString = this.currentCard.effects[button].modifiers;
+	buttonClick(event){
+		let messageString = game.currentCard.effects[event.currentTarget.id].modifiers;
 		var tag = document.createElement("p");
 		var text = document.createTextNode(messageString);
 		tag.appendChild(text);
@@ -199,12 +212,12 @@ class Game{
 			else if (element[0] == "-"){
 				this[element[2] + 'Val'] -= parseInt(element[1]);
 			}
-		}, this);
+		}, game);
 
 		//Reset timers
-		this.timeLeft = this.turnTimer;
-		this.turnStart = Date.now();
-		this.update();
+		game.timeLeft = game.turnTimer;
+		game.turnStart = Date.now();
+		game.update();
 		
 	}
 }
@@ -212,18 +225,17 @@ class Game{
 
 $(document).ready(function() {
 	window.addEventListener("click", startup);
-	var game = new Game();
+	game = new Game();
 
 	$.getJSON("https://globalgig.github.io/HEXPIRE/data.json", function(data) {
 		game.jsonObj = data;
-		game.timing();
 		game.cardRoutine();
-		document.getElementById("decisionButtonl").addEventListener("mouseenter",function(){game.buttonHover("l")});
-		document.getElementById("decisionButtonm").addEventListener("mouseenter",function(){game.buttonHover("m")});
-		document.getElementById("decisionButtonr").addEventListener("mouseenter",function(){game.buttonHover("r")});
-		document.getElementById("decisionButtonl").addEventListener("click",function(){game.buttonClick("l")});
-		document.getElementById("decisionButtonm").addEventListener("click",function(){game.buttonClick("m")});
-		document.getElementById("decisionButtonr").addEventListener("click",function(){game.buttonClick("r")});
+		document.getElementById("l").addEventListener("mouseenter",game.buttonHover);
+		document.getElementById("m").addEventListener("mouseenter",game.buttonHover);
+		document.getElementById("r").addEventListener("mouseenter",game.buttonHover);
+		document.getElementById("l").addEventListener("click",game.buttonClick);
+		document.getElementById("m").addEventListener("click",game.buttonClick);
+		document.getElementById("r").addEventListener("click",game.buttonClick);
  	});
 });
 

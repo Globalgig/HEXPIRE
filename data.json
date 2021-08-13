@@ -1,10 +1,11 @@
 {
 	"cards": {
 		"1" : {
-			"prompt" : "Military",
+			"type" : "Military",
+			"prompt" : "words",
 			"color" : "red",
 			"decisions" : {
-				"l" : "blue",
+				"l" : "red",
 				"m" : "purple",
 				"r" : "purple"
 			},
@@ -24,7 +25,8 @@
 			}
 		},
 		"2" : {
-			"prompt" : "Industrial",
+			"type" : "Industrial",
+			"prompt" : "words",
 			"color" : "orange",
 			"decisions" : {
 				"l" : "green",
@@ -47,7 +49,8 @@
 			}
 		},
 		"3" : {
-			"prompt" : "Scientific",
+			"type" : "Scientific",
+			"prompt" : "words",
 			"color" : "blue",
 			"decisions" : {
 				"l" : "yellow",
@@ -70,7 +73,8 @@
 			}
 		},
 		"4" : {
-			"prompt" : "Diplomatic",
+			"type" : "Diplomatic",
+			"prompt" : "words",
 			"color" : "purple",
 			"decisions" : {
 				"l" : "red",
@@ -93,7 +97,8 @@
 			}
 		},
 		"5" : {
-			"prompt" : "Enviromental",
+			"type" : "Enviromental",
+			"prompt" : "words",
 			"color" : "green",
 			"decisions" : {
 				"l" : "orange",
@@ -116,7 +121,8 @@
 			}
 		},
 		"6" : {
-			"prompt" : "Economic",
+			"type" : "Economic",
+			"prompt" : "words",
 			"color" : "yellow",
 			"decisions" : {
 				"l" : "blue",
