@@ -7,21 +7,20 @@
 			"decisions" : {
 				"l" : "purple",
 				"m" : "red",
-				"r" : "red",
+				"r" : "red"
 			},
 			"effects" : {
 				"l" : {
-					"text" : "Rig the Election
-Gain 2 purple, Lose 2 red",
-					"modifiers" : "2+p,2-r",
+					"text" : ["Garner support for the pacifists", "Gain 1 purple, Lose 2 red"],
+					"modifiers" : "1+p,2-r"
 				},
 				"m" : {
-					"text" : "Gain 1 red, Lose 1 purple",
-					"modifiers" : "1+r,1-p",
+					"text" : ["Garner support for the militarists." ,"Gain 1 red, Lose 2 purple"],
+					"modifiers" : "1+r,2-p"
 				},
 				"r" : {
-					"text" : "Gain 2 red, Lose 2 purple",
-					"modifiers" : "2+r,2-p",
+					"text" : ["Rig the election in favor of the militarists." ,"Gain 1 red, Lose 3 purple"],
+					"modifiers" : "1+r,3-p"
 				}
 			}
 		},
@@ -32,20 +31,20 @@ Gain 2 purple, Lose 2 red",
 			"decisions" : {
 				"l" : "green",
 				"m" : "orange",
-				"r" : "orange",
+				"r" : "orange"
 			},
 			"effects" : {
 				"l" : {
-					"text" : "Gain 2 green, Lose 2 orange",
-					"modifiers" : "2+g,2-o",
+					"text" : ["Garner support for the ecologists." ,"Gain 1 green, Lose 2 orange"],
+					"modifiers" : "1+g,2-o"
 				},
 				"m" : {
-					"text" : "Gain 1 orange, Lose 1 green",
-					"modifiers" : "1+o,1-g",
+					"text" : ["Garner support for the industrialists." ,"Gain 1 orange, Lose 2 green"],
+					"modifiers" : "1+o,2-g"
 				},
 				"r" : {
-					"text" : "Gain 2 orange, Lose 2 green",
-					"modifiers" : "2+o,2-g",
+					"text" : ["Rig the election in favor of the industrialists." ,"Gain 1 orange, Lose 3 green"],
+					"modifiers" : "1+o,3-g"
 				}
 			}
 		},
@@ -56,20 +55,20 @@ Gain 2 purple, Lose 2 red",
 			"decisions" : {
 				"l" : "yellow",
 				"m" : "blue",
-				"r" : "blue",
+				"r" : "blue"
 			},
 			"effects" : {
 				"l" : {
-					"text" : "Gain 2 yellow, Lose 2 blue",
-					"modifiers" : "2+y,2-b",
+					"text" : ["Garner support for the economists." ,"Gain 1 yellow, Lose 2 blue"],
+					"modifiers" : "1+y,2-b"
 				},
 				"m" : {
-					"text" : "Gain 1 blue, Lose 1 yellow",
-					"modifiers" : "1+b ,1-y",
+					"text" : ["Garner support for the scientists." ,"Gain 1 blue, Lose 2 yellow"],
+					"modifiers" : "1+b ,2-y"
 				},
 				"r" : {
-					"text" : "Gain 2 blue, Lose 2 yellow",
-					"modifiers" : "2+b,2-y",
+					"text" : ["Rig the election in favor of the scientists." ,"Gain 1 blue, Lose 3 yellow"],
+					"modifiers" : "1+b,3-y"
 				}
 			}
 		},
@@ -80,20 +79,20 @@ Gain 2 purple, Lose 2 red",
 			"decisions" : {
 				"l" : "red",
 				"m" : "purple",
-				"r" : "purple",
+				"r" : "purple"
 			},
 			"effects" : {
 				"l" : {
-					"text" : "Gain 2 red, Lose 2 purple",
-					"modifiers" : "2+r,2-p",
+					"text" : ["Garner support for the militarists." ,"Gain 1 red, Lose 2 purple"],
+					"modifiers" : "1+r,2-p"
 				},
 				"m" : {
-					"text" : "Gain 1 purple, Lose 1 red",
-					"modifiers" : "1+p,1-r",
+					"text" : ["Garner support for the pacifists." ,"Gain 1 purple, Lose 2 red"],
+					"modifiers" : "1+p,2-r"
 				},
 				"r" : {
-					"text" : "Gain 2 purple, Lose 2 red",
-					"modifiers" : "2+p,2-r",
+					"text" : ["Rig the election in favor of the pacifists." ,"Gain 1 purple, Lose 3 red"],
+					"modifiers" : "1+p,3-r"
 				}
 			}
 		},
@@ -104,20 +103,20 @@ Gain 2 purple, Lose 2 red",
 			"decisions" : {
 				"l" : "orange",
 				"m" : "green",
-				"r" : "green",
+				"r" : "green"
 			},
 			"effects" : {
 				"l" : {
-					"text" : "Gain 2 orange, Lose 2 green",
-					"modifiers" : "2+o,2-g",
+					"text" : ["Garner support for the industrialists." ,"Gain 1 orange, Lose 2 green"],
+					"modifiers" : "1+o,2-g"
 				},
 				"m" : {
-					"text" : "Gain 1 green, Lose 1 orange",
-					"modifiers" : "1+g,1-o",
+					"text" : ["Garner support for the ecologists." ,"Gain 1 green, Lose 2 orange"],
+					"modifiers" : "1+g,2-o"
 				},
 				"r" : {
-					"text" : "Gain 2 green, Lose 2 orange",
-					"modifiers" : "2+g,2-o",
+					"text" : ["Rig the election in favor of the ecologists." ,"Gain 1 green, Lose 3 orange"],
+					"modifiers" : "1+g,3-o"
 				}
 			}
 		},
@@ -128,22 +127,22 @@ Gain 2 purple, Lose 2 red",
 			"decisions" : {
 				"l" : "blue",
 				"m" : "yellow",
-				"r" : "yellow",
+				"r" : "yellow"
 			},
 			"effects" : {
 				"l" : {
-					"text" : "Gain 2 blue, Lose 2 yellow",
-					"modifiers" : "2+b,2-y",
+					"text" : ["Garner support for the scientists." ,"Gain 1 blue, Lose 2 yellow"],
+					"modifiers" : "1+b,2-y"
 				},
 				"m" : {
-					"text" : "Gain 1 yellow, Lose 1 blue",
-					"modifiers" : "1+y,1-b",
+					"text" : ["Garner support for the economists." ,"Gain 1 yellow, Lose 2 blue"],
+					"modifiers" : "1+y,2-b"
 				},
 				"r" : {
-					"text" : "Gain 2 yellow, Lose 2 blue",
-					"modifiers" : "2+y,2-b",
+					"text" : ["Rig the election in favor of the economists." ,"Gain 1 yellow, Lose 3 purple"],
+					"modifiers" : "1+y,3-b"
 				}
 			}
-		},
+		}
 	}
 }
