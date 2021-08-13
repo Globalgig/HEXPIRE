@@ -1,6 +1,6 @@
 {
 	"cards": {
-		"1" : {
+		"01" : {
 			"type" : "Military",
 			"prompt" : "Words",
 			"color" : "red",
@@ -20,11 +20,11 @@
 				},
 				"r" : {
 					"text" : ["Rig the election in favor of the militarists." ,"Gain 1 red, Lose 3 purple"],
-					"modifiers" : "1+r,3-p"
+					"modifiers" : "1+r,3-p,A07"
 				}
 			}
 		},
-		"2" : {
+		"02" : {
 			"type" : "Industry",
 			"prompt" : "Words",
 			"color" : "orange",
@@ -44,11 +44,11 @@
 				},
 				"r" : {
 					"text" : ["Rig the election in favor of the industrialists." ,"Gain 1 orange, Lose 3 green"],
-					"modifiers" : "1+o,3-g"
+					"modifiers" : "1+o,3-g,A08"
 				}
 			}
 		},
-		"3" : {
+		"03" : {
 			"type" : "Science",
 			"prompt" : "Words",
 			"color" : "blue",
@@ -68,11 +68,11 @@
 				},
 				"r" : {
 					"text" : ["Rig the election in favor of the scientists." ,"Gain 1 blue, Lose 3 yellow"],
-					"modifiers" : "1+b,3-y"
+					"modifiers" : "1+b,3-y,A09"
 				}
 			}
 		},
-		"4" : {
+		"04" : {
 			"type" : "Diplomacy",
 			"prompt" : "Words",
 			"color" : "purple",
@@ -92,11 +92,11 @@
 				},
 				"r" : {
 					"text" : ["Rig the election in favor of the pacifists." ,"Gain 1 purple, Lose 3 red"],
-					"modifiers" : "1+p,3-r"
+					"modifiers" : "1+p,3-r,A10"
 				}
 			}
 		},
-		"5" : {
+		"05" : {
 			"type" : "Ecology",
 			"prompt" : "Words",
 			"color" : "green",
@@ -116,11 +116,11 @@
 				},
 				"r" : {
 					"text" : ["Rig the election in favor of the ecologists." ,"Gain 1 green, Lose 3 orange"],
-					"modifiers" : "1+g,3-o"
+					"modifiers" : "1+g,3-o,A11"
 				}
 			}
 		},
-		"6" : {
+		"06" : {
 			"type" : "Economy",
 			"prompt" : "Words",
 			"color" : "yellow",
@@ -140,7 +140,7 @@
 				},
 				"r" : {
 					"text" : ["Rig the election in favor of the economists." ,"Gain 1 yellow, Lose 3 purple"],
-					"modifiers" : "1+y,3-b"
+					"modifiers" : "1+y,3-b,A12"
 				}
 			}
 		}
