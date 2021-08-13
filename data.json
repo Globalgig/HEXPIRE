@@ -2,147 +2,147 @@
 	"cards": {
 		"1" : {
 			"type" : "Military",
-			"prompt" : "words",
+			"prompt" : "Words",
 			"color" : "red",
 			"decisions" : {
-				"l" : "red",
-				"m" : "purple",
-				"r" : "purple"
+				"l" : "purple",
+				"m" : "red",
+				"r" : "red",
 			},
 			"effects" : {
 				"l" : {
-					"text" : "Gain 2 Blue, Lose 2 Purple",
-					"modifiers" : "+2b,-2p"
+					"text" : "Gain 2 purple, Lose 2 red",
+					"modifiers" : "2+p,2-r",
 				},
 				"m" : {
-					"text" : "Gain 1 Red, Lose 1 Purple",
-					"modifiers" : "+1r,-1p"
+					"text" : "Gain 1 red, Lose 1 purple",
+					"modifiers" : "1+r,1-p",
 				},
 				"r" : {
-					"text" : "Gain 2 Red, Lose 2 Purple",
-					"modifiers" : "+2r,-2p"
+					"text" : "Gain 2 red, Lose 2 purple",
+					"modifiers" : "2+r,2-p",
 				}
 			}
 		},
 		"2" : {
-			"type" : "Industrial",
-			"prompt" : "words",
+			"type" : "Industry",
+			"prompt" : "Words",
 			"color" : "orange",
 			"decisions" : {
 				"l" : "green",
 				"m" : "orange",
-				"r" : "orange"
+				"r" : "orange",
 			},
 			"effects" : {
 				"l" : {
-					"text" : "Gain 2 Green, Lose 2 Orange",
-					"modifiers" : "+2g,-2o"
+					"text" : "Gain 2 green, Lose 2 orange",
+					"modifiers" : "2+g,2-o",
 				},
 				"m" : {
-					"text" : "Gain 1 Orange, Lose 1 Green",
-					"modifiers" : "+1o,-1g"
+					"text" : "Gain 1 orange, Lose 1 green",
+					"modifiers" : "1+o,1-g",
 				},
 				"r" : {
-					"text" : "Gain 2 Orange, Lose 2 Green",
-					"modifiers" : "+2o,-2g"
+					"text" : "Gain 2 orange, Lose 2 green",
+					"modifiers" : "2+o,2-g",
 				}
 			}
 		},
 		"3" : {
-			"type" : "Scientific",
-			"prompt" : "words",
+			"type" : "Science",
+			"prompt" : "Words",
 			"color" : "blue",
 			"decisions" : {
 				"l" : "yellow",
 				"m" : "blue",
-				"r" : "blue"
+				"r" : "blue",
 			},
 			"effects" : {
 				"l" : {
-					"text" : "Gain 2 Yellow, Lose 2 Blue",
-					"modifiers" : "+2y,-2b"
+					"text" : "Gain 2 yellow, Lose 2 blue",
+					"modifiers" : "2+y,2-b",
 				},
 				"m" : {
-					"text" : "Gain 1 Yellow, Lose 1 Blue",
-					"modifiers" : "+1y,-1b"
+					"text" : "Gain 1 blue, Lose 1 yellow",
+					"modifiers" : "1+b ,1-y",
 				},
 				"r" : {
-					"text" : "Gain 2 Yellow, Lose 2 Blue",
-					"modifiers" : "+2y,-2b"
+					"text" : "Gain 2 blue, Lose 2 yellow",
+					"modifiers" : "2+b,2-y",
 				}
 			}
 		},
 		"4" : {
-			"type" : "Diplomatic",
-			"prompt" : "words",
+			"type" : "Diplomacy",
+			"prompt" : "Words",
 			"color" : "purple",
 			"decisions" : {
 				"l" : "red",
 				"m" : "purple",
-				"r" : "purple"
+				"r" : "purple",
 			},
 			"effects" : {
 				"l" : {
-					"text" : "Gain 2 Red, Lose 2 Purple",
-					"modifiers" : "+2r,-2p"
+					"text" : "Gain 2 red, Lose 2 purple",
+					"modifiers" : "2+r,2-p",
 				},
 				"m" : {
-					"text" : "Gain 1 Purple, Lose 1 Red",
-					"modifiers" : "+1p,-1r"
+					"text" : "Gain 1 purple, Lose 1 red",
+					"modifiers" : "1+p,1-r",
 				},
 				"r" : {
-					"text" : "Gain 2 Purple, Lose 2 Red",
-					"modifiers" : "+2p,-2r"
+					"text" : "Gain 2 purple, Lose 2 red",
+					"modifiers" : "2+p,2-r",
 				}
 			}
 		},
 		"5" : {
-			"type" : "Enviromental",
-			"prompt" : "words",
+			"type" : "Ecology",
+			"prompt" : "Words",
 			"color" : "green",
 			"decisions" : {
 				"l" : "orange",
 				"m" : "green",
-				"r" : "green"
+				"r" : "green",
 			},
 			"effects" : {
 				"l" : {
-					"text" : "Gain 2 Orange, Lose 2 Green",
-					"modifiers" : "+2o,-2g"
+					"text" : "Gain 2 orange, Lose 2 green",
+					"modifiers" : "2+o,2-g",
 				},
 				"m" : {
-					"text" : "Gain 1 Green, Lose 1 Orange",
-					"modifiers" : "+1g,-1o"
+					"text" : "Gain 1 green, Lose 1 orange",
+					"modifiers" : "1+g,1-o",
 				},
 				"r" : {
-					"text" : "Gain 2 Green, Lose 2 Orange",
-					"modifiers" : "+2g,-2o"
+					"text" : "Gain 2 green, Lose 2 orange",
+					"modifiers" : "2+g,2-o",
 				}
 			}
 		},
 		"6" : {
-			"type" : "Economic",
-			"prompt" : "words",
+			"type" : "Economy",
+			"prompt" : "Words",
 			"color" : "yellow",
 			"decisions" : {
 				"l" : "blue",
 				"m" : "yellow",
-				"r" : "yellow"
+				"r" : "yellow",
 			},
 			"effects" : {
 				"l" : {
-					"text" : "Gain 2 Blue, Lose 2 Yellow",
-					"modifiers" : "+2b,-2y"
+					"text" : "Gain 2 blue, Lose 2 yellow",
+					"modifiers" : "2+b,2-y",
 				},
 				"m" : {
-					"text" : "Gain 1 Yellow, Lose 1 Blue",
-					"modifiers" : "+1y,-1b"
+					"text" : "Gain 1 yellow, Lose 1 blue",
+					"modifiers" : "1+y,1-b",
 				},
 				"r" : {
-					"text" : "Gain 2 Yellow, Lose 2 Blue",
-					"modifiers" : "+2y,-2b"
+					"text" : "Gain 2 yellow, Lose 2 blue",
+					"modifiers" : "2+y,2-b",
 				}
 			}
-		}
+		},
 	}
 }

@@ -206,11 +206,11 @@ class Game{
 		let splitModifiers = messageString.split(',');
 		splitModifiers.forEach(function(element){
 			//Parse out the sign of the string
-			if(element[0] == "+"){
-				this[element[2] + 'Val'] += parseInt(element[1]);
+			if(element[1] == "+"){
+				this[element[2] + 'Val'] += parseInt(element[0]);
 			}
-			else if (element[0] == "-"){
-				this[element[2] + 'Val'] -= parseInt(element[1]);
+			else if (element[1] == "-"){
+				this[element[2] + 'Val'] -= parseInt(element[0]);
 			}
 		}, game);
 
@@ -241,3 +241,15 @@ $(document).ready(function() {
 
 
 
+
+
+//BRAINSTORMING
+/*
+Military - Top 3 stat improvements
+Industrial - Adding Cards
+Science - Timers
+Diplomacy - Bottom 3 stat improvements
+Environmental - Removing Cards
+Commerce - Points
+
+*/
