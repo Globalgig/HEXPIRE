@@ -2,7 +2,7 @@
 	"cards": {
 		"01" : {
 			"type" : "Military",
-			"prompt" : "Words",
+			"prompt" : "The militarist elections are approaching.",
 			"color" : "red",
 			"decisions" : {
 				"l" : "purple",
@@ -15,7 +15,7 @@
 					"modifiers" : "1+p,2-r"
 				},
 				"m" : {
-					"text" : ["Garner support for the militarists." ,"Gain 1 red, Lose 2 purple"],
+					"text" : ["Garner support for the militarists." ,"Gain 1 red, Lose 2 purple", "Add card 07"],
 					"modifiers" : "1+r,2-p"
 				},
 				"r" : {
@@ -26,7 +26,7 @@
 		},
 		"02" : {
 			"type" : "Industry",
-			"prompt" : "Words",
+			"prompt" : "The industrialist elections are approaching.",
 			"color" : "orange",
 			"decisions" : {
 				"l" : "green",
@@ -39,7 +39,7 @@
 					"modifiers" : "1+g,2-o"
 				},
 				"m" : {
-					"text" : ["Garner support for the industrialists." ,"Gain 1 orange, Lose 2 green"],
+					"text" : ["Garner support for the industrialists." ,"Gain 1 orange, Lose 2 green", "Add card 08"],
 					"modifiers" : "1+o,2-g"
 				},
 				"r" : {
@@ -50,7 +50,7 @@
 		},
 		"03" : {
 			"type" : "Science",
-			"prompt" : "Words",
+			"prompt" : "The scientific elections are approaching.",
 			"color" : "blue",
 			"decisions" : {
 				"l" : "yellow",
@@ -63,7 +63,7 @@
 					"modifiers" : "1+y,2-b"
 				},
 				"m" : {
-					"text" : ["Garner support for the scientists." ,"Gain 1 blue, Lose 2 yellow"],
+					"text" : ["Garner support for the scientists." ,"Gain 1 blue, Lose 2 yellow", "Add card 09"],
 					"modifiers" : "1+b ,2-y"
 				},
 				"r" : {
@@ -74,7 +74,7 @@
 		},
 		"04" : {
 			"type" : "Diplomacy",
-			"prompt" : "Words",
+			"prompt" : "The diplomatic elections are approaching.",
 			"color" : "purple",
 			"decisions" : {
 				"l" : "red",
@@ -87,7 +87,7 @@
 					"modifiers" : "1+r,2-p"
 				},
 				"m" : {
-					"text" : ["Garner support for the pacifists." ,"Gain 1 purple, Lose 2 red"],
+					"text" : ["Garner support for the pacifists." ,"Gain 1 purple, Lose 2 red","Add card 10"],
 					"modifiers" : "1+p,2-r"
 				},
 				"r" : {
@@ -98,7 +98,7 @@
 		},
 		"05" : {
 			"type" : "Ecology",
-			"prompt" : "Words",
+			"prompt" : "The ecologist elections are approaching.",
 			"color" : "green",
 			"decisions" : {
 				"l" : "orange",
@@ -111,7 +111,7 @@
 					"modifiers" : "1+o,2-g"
 				},
 				"m" : {
-					"text" : ["Garner support for the ecologists." ,"Gain 1 green, Lose 2 orange"],
+					"text" : ["Garner support for the ecologists." ,"Gain 1 green, Lose 2 orange", "Add card 11"],
 					"modifiers" : "1+g,2-o"
 				},
 				"r" : {
@@ -122,7 +122,7 @@
 		},
 		"06" : {
 			"type" : "Economy",
-			"prompt" : "Words",
+			"prompt" : "The economist elections are approaching.",
 			"color" : "yellow",
 			"decisions" : {
 				"l" : "blue",
@@ -135,7 +135,7 @@
 					"modifiers" : "1+b,2-y"
 				},
 				"m" : {
-					"text" : ["Garner support for the economists." ,"Gain 1 yellow, Lose 2 blue"],
+					"text" : ["Garner support for the economists." ,"Gain 1 yellow, Lose 2 blue", "Add card 12"],
 					"modifiers" : "1+y,2-b"
 				},
 				"r" : {

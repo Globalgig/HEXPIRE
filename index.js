@@ -115,7 +115,6 @@ class Game{
 	cardRoutine(){
 		this.cardID = this.selectCard();
 		this.currentCard = this.jsonObj.cards[this.cardID];
-		console.log(this.currentCard)
 		this.displayCard(this.currentCard);
 	}
 
@@ -217,8 +216,9 @@ class Game{
 			else if (element[1] == "-"){
 				this[element[2] + 'Val'] -= parseInt(element[0]);
 			}
-			else if(element[1] == "A"){
-				this.currentDeck.append(str(element[1]) + str(element[2]))
+			else if(element[0] == "A"){
+				console.log(element.substring(1))
+				this.currentDeck.push(element.substring(1))
 			}
 		}, game);
 
@@ -234,10 +234,8 @@ class Game{
 $(document).ready(function() {
 	window.addEventListener("click", startup);
 	game = new Game();
-	console.log("yes")
 
 	$.getJSON("https://globalgig.github.io/HEXPIRE/data.json", function(data) {
-		console.log("okay?")
 		game.jsonObj = data;
 		game.cardRoutine();
 		document.getElementById("l").addEventListener("mouseenter",game.buttonHover);
