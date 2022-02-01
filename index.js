@@ -42,6 +42,7 @@ function startup(){
 	addFade("yellow", "yellowFade")
 	secondaryFade("messageBoard")
 	secondaryFade("decisionBoard")
+	secondaryFade("score")
 	game.timing();
 	window.removeEventListener("click", startup);
 }
@@ -139,6 +140,12 @@ class Game{
 		return randomID;
 	}
 
+	updateScore(){
+		let currentScore = document.getElementById("score").innerHTML;
+		console.log(parseInt(currentScore) + this.timeLeft)
+		currentScore = parseInt(currentScore) + this.timeLeft;
+	}
+
 	displayCard(){
 		//Set the prompt
 		let promptObj = document.getElementById("prompt");
@@ -200,6 +207,7 @@ class Game{
 	}
 
 	buttonClick(event){
+		game.updateScore();
 		let messageString = game.currentCard.effects[event.currentTarget.id].modifiers;
 		var tag = document.createElement("p");
 		var text = document.createTextNode(messageString);

@@ -157,3 +157,12 @@ p{
     border-radius: 10px;
     position: absolute;
 }
+
+.score{
+    text-align: center;
+    vertical-align: middle; 
+    line-height: 400px; 
+    width:400px; 
+    position: absolute; 
+    opacity:0
+}

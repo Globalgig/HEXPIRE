@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+	<form>
+		<div>
+			<label for="card-id">Id:</label>
+			<input type="number" id="card-id" style="width: 3em"></input><br><br>
+			<label for="type">Card type:</label>
+			<select id="type" onchange="changeColor(this, 'type')" style="background-color: red">
+				<option value="military" style="background-color: red">Military</option>
+				<option value="industry" style="background-color: orange">Industry</option>
+				<option value="science" style="background-color: blue">Science</option>
+				<option value="diplomacy" style="background-color: purple">Diplomacy</option>
+				<option value="ecology" style="background-color: green">Ecology</option>
+				<option value="economy" style="background-color: yellow">Economy</option>
+			</select><br><br>
+			<label for="prompt">Prompt:</label>
+			<input type="text" id="prompt" size="100"></input>
+		</div>
+		<br><br>
+		<div>
+			<span>Left option:</span><br>
+			<select id="left" onchange="changeColor(this, 'left')" style="background-color: red">
+				<option value="red" style="background-color: red">Military</option>
+				<option value="orange" style="background-color: orange">Industry</option>
+				<option value="blue" style="background-color: blue">Science</option>
+				<option value="purple" style="background-color: purple">Diplomacy</option>
+				<option value="green" style="background-color: green">Ecology</option>
+				<option value="yellow" style="background-color: yellow">Economy</option>
+			</select>
+			<label for="left-text">Text:</label>
+			<input type="text" id="left-text" size="100"></input><br>
+			<div>
+				<input type="number" id="left-red" style="width: 2em; background-color: red" value="0"></input>
+				<input type="number" id="left-orange" style="width: 2em; background-color: orange" value="0"></input>
+				<input type="number" id="left-blue" style="width: 2em; background-color: blue" value="0"></input>
+				<input type="number" id="left-purple" style="width: 2em; background-color: purple" value="0"></input>
+				<input type="number" id="left-green" style="width: 2em; background-color: green" value="0"></input>
+				<input type="number" id="left-yellow" style="width: 2em; background-color: yellow" value="0"></input>
+			</div>
+			<div>
+				<label for="remove-this-left">Remove this card:</label>
+				<input type="checkbox" id="remove-this-left"></input><br>
+				<label for="add-card-left">Add card id:</label>
+				<input type="number" id="add-card-left" style="width: 3em"></input>
+				<label for="remove-card-left">Remove card id:</label>
+				<input type="number" id="remove-card-left" style="width: 3em"></input><br>
+				<label for="add-random-left">Add random card:</label>
+				<input type="checkbox" id="add-random-left"></input>
+				<label for="remove-random-left">Remove random card:</label>
+				<input type="checkbox" id="remove-random-left"></input><br>
+				<label for="adjust-timer-left">Adjust timer:</label>
+				<input type="number" id="adjust-timer-left" style="width: 2em"></input><br>
+				<label for="adjust-points-left">Adjust points:</label>
+				<input type="number" id="adjust-points-left" style="width: 4em"></input><br>
+			</div>
+		</div>
+		<br><br><br>
+		<div>
+			<span>Middle option:</span><br>
+			<select id="middle" onchange="changeColor(this, 'middle')" style="background-color: red">
+				<option value="red" style="background-color: red">Military</option>
+				<option value="orange" style="background-color: orange">Industry</option>
+				<option value="blue" style="background-color: blue">Science</option>
+				<option value="purple" style="background-color: purple">Diplomacy</option>
+				<option value="green" style="background-color: green">Ecology</option>
+				<option value="yellow" style="background-color: yellow">Economy</option>
+			</select>
+			<label for="middle-text">Text:</label>
+			<input type="text" id="middle-text" size="100"></input>
+			<div>
+				<input type="number" id="middle-red" style="width: 2em; background-color: red" value="0"></input>
+				<input type="number" id="middle-orange" style="width: 2em; background-color: orange" value="0"></input>
+				<input type="number" id="middle-blue" style="width: 2em; background-color: blue" value="0"></input>
+				<input type="number" id="middle-purple" style="width: 2em; background-color: purple" value="0"></input>
+				<input type="number" id="middle-green" style="width: 2em; background-color: green" value="0"></input>
+				<input type="number" id="middle-yellow" style="width: 2em; background-color: yellow" value="0"></input>
+			</div>
+			<div>
+				<label for="remove-this-middle">Remove this card:</label>
+				<input type="checkbox" id="remove-this-middle"></input><br>
+				<label for="add-card-middle">Add card id:</label>
+				<input type="number" id="add-card-middle" style="width: 3em"></input>
+				<label for="remove-card-middle">Remove card id:</label>
+				<input type="number" id="remove-card-middle" style="width: 3em"></input><br>
+				<label for="add-random-middle">Add random card:</label>
+				<input type="checkbox" id="add-random-middle"></input>
+				<label for="remove-random-middle">Remove random card:</label>
+				<input type="checkbox" id="remove-random-middle"></input><br>
+				<label for="adjust-timer-middle">Adjust timer:</label>
+				<input type="number" id="adjust-timer-middle" style="width: 2em"></input><br>
+				<label for="adjust-points-middle">Adjust points:</label>
+				<input type="number" id="adjust-points-middle" style="width: 4em"></input><br>
+			</div>
+		</div>
+		<br><br><br>
+		<div>
+			<span>Right option:</span><br>
+			<select id="right" onchange="changeColor(this, 'right')" style="background-color: red">
+				<option value="red" style="background-color: red">Military</option>
+				<option value="orange" style="background-color: orange">Industry</option>
+				<option value="blue" style="background-color: blue">Science</option>
+				<option value="purple" style="background-color: purple">Diplomacy</option>
+				<option value="green" style="background-color: green">Ecology</option>
+				<option value="yellow" style="background-color: yellow">Economy</option>
+			</select>
+			<label for="right-text">Text:</label>
+			<input type="text" id="right-text" size="100"></input>
+			<div>
+				<input type="number" id="right-red" style="width: 2em; background-color: red" value="0"></input>
+				<input type="number" id="right-orange" style="width: 2em; background-color: orange" value="0"></input>
+				<input type="number" id="right-blue" style="width: 2em; background-color: blue" value="0"></input>
+				<input type="number" id="right-purple" style="width: 2em; background-color: purple" value="0"></input>
+				<input type="number" id="right-green" style="width: 2em; background-color: green" value="0"></input>
+				<input type="number" id="right-yellow" style="width: 2em; background-color: yellow" value="0"></input>
+			</div>
+			<div>
+				<label for="remove-this-right">Remove this card:</label>
+				<input type="checkbox" id="remove-this-right"></input><br>
+				<label for="add-card-right">Add card id:</label>
+				<input type="number" id="add-card-right" style="width: 3em"></input>
+				<label for="remove-card-right">Remove card id:</label>
+				<input type="number" id="remove-card-right" style="width: 3em"></input><br>
+				<label for="add-random-right">Add random card:</label>
+				<input type="checkbox" id="add-random-right"></input>
+				<label for="remove-random-right">Remove random card:</label>
+				<input type="checkbox" id="remove-random-right"></input><br>
+				<label for="adjust-timer-right">Adjust timer:</label>
+				<input type="number" id="adjust-timer-right" style="width: 2em"></input><br>
+				<label for="adjust-points-right">Adjust points:</label>
+				<input type="number" id="adjust-points-right" style="width: 4em"></input><br>
+			</div>
+		</div>
+		<br>
+	</form>
+	<button style="font-size: 20px" onclick="submit()">Submit</button>
+	<p id="output"></p>
+</body>
+
+<script type="text/javascript">
+	function changeColor(param, id){
+		var color = param.value.toString();
+		if(color == "military")
+			color = "red";
+		if(color == "industry")
+			color = "orange";
+		if(color == "science")
+			color = "blue";
+		if(color == "diplomacy")
+			color = "purple";
+		if(color == "ecology")
+			color = "green";
+		if(color == "economy")
+			color = "yellow";
+		document.getElementById(id).style.backgroundColor = color;
+	}
+
+	function populateObject(leftString, middleString, rightString){
+		var obj = {
+			id : document.getElementById("card-id"),
+			type : document.getElementById("type").value,
+			color : document.getElementById("type").style.backgroundColor,
+			decisions : {
+				l : document.getElementById("left").style.backgroundColor,
+				m : document.getElementById("middle").style.backgroundColor,
+				r : document.getElementById("right").style.backgroundColor
+			},
+			effects : {
+				l : {
+					text : document.getElementById("left-text").value,
+					modifiers : leftString
+				},
+				m : {
+					text : document.getElementById("middle-text").value,
+					modifiers : middleString
+				},
+				r : {
+					text : document.getElementById("right-text").value,
+					modifiers : rightString
+				}
+			}
+		}
+		return obj;
+	}
+
+	function buildModifiers(location){
+		var returnString = "";
+
+		var val;
+		val = parseInt(document.getElementById(location + "-red").value);
+		if (val != 0){
+			returnString += String(Math.abs(val));
+			if(Math.sign(val) == 1){
+				returnString += "+"
+			}
+			else{
+				returnString += "-"
+			}
+			returnString += "r,"
+		}
+
+		val = parseInt(document.getElementById(location + "-orange").value);
+		if (val != 0){
+			returnString += String(Math.abs(val));
+			if(Math.sign(val) == 1){
+				returnString += "+"
+			}
+			else{
+				returnString += "-"
+			}
+			returnString += "o,"
+		}
+
+		val = parseInt(document.getElementById(location + "-yellow").value);
+		if (val != 0){
+			returnString += String(Math.abs(val));
+			if(Math.sign(val) == 1){
+				returnString += "+"
+			}
+			else{
+				returnString += "-"
+			}
+			returnString += "y,"
+		}
+
+		val = parseInt(document.getElementById(location + "-green").value);
+		if (val != 0){
+			returnString += String(Math.abs(val));
+			if(Math.sign(val) == 1){
+				returnString += "+"
+			}
+			else{
+				returnString += "-"
+			}
+			returnString += "g,"
+		}
+
+		val = parseInt(document.getElementById(location + "-blue").value);
+		if (val != 0){
+			returnString += String(Math.abs(val));
+			if(Math.sign(val) == 1){
+				returnString += "+"
+			}
+			else{
+				returnString += "-"
+			}
+			returnString += "b,"
+		}
+
+		val = parseInt(document.getElementById(location + "-purple").value);
+		if (val != 0){
+			returnString += String(Math.abs(val));
+			if(Math.sign(val) == 1){
+				returnString += "+"
+			}
+			else{
+				returnString += "-"
+			}
+			returnString += "p,"
+		}
+
+		if(document.getElementById("remove-this-" + location).checked){
+			returnString += "RTC,"
+		}
+
+		val = document.getElementById("add-card-" + location).value
+		if(val != 0){
+			returnString += "A"
+			if (val < 10){
+				returnString += "0"
+			}
+			returnString += String(val) + ","
+		}
+
+		val = document.getElementById("remove-card-" + location).value
+		if(val != 0){
+			returnString += "R"
+			if (val < 10){
+				returnString += "0"
+			}
+			returnString += String(val) + ","
+		}
+
+		if(document.getElementById("add-random-" + location).checked){
+			returnString += "ARD,"
+		}
+
+		if(document.getElementById("remove-random-" + location).checked){
+			returnString += "RRD,"
+		}
+
+		val = document.getElementById("adjust-timer-" + location).value
+		if(val != 0){
+			returnString += "T"
+			if (val < 10){
+				returnString += "0"
+			}
+			returnString += String(val) + ","
+		}
+
+		val = document.getElementById("adjust-points-" + location).value
+		if(val != 0){
+			returnString += "P"
+			if (val < 10){
+				returnString += "0"
+			}
+			returnString += String(val) + ","
+		}
+
+		return returnString.slice(0,-1);
+	}
+
+	function submit(){
+		var leftString = buildModifiers("left");
+		var middleString = buildModifiers("middle");
+		var rightString = buildModifiers("right");
+		var obj = populateObject(leftString, middleString, rightString);
+		document.getElementById("output").innerHTML = JSON.stringify(obj);
+	}
+	
+</script>
+</html>
